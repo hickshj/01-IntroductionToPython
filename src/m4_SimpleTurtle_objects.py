@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Hunter Hicks.
 """
 ###############################################################################
 #
-# TODO: 1.
+# Done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving, *click anywhere in the window to close it*.
 #
@@ -109,9 +109,11 @@ natasha.forward(50)
 natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
 
+boris.pen = rg.Pen('blue', 15)
+boris.go_to(rg.Point(200, -100))
 ###############################################################################
 #
-# TODO: 4.
+# Done: 4.
 #   Add a few more lines of your own code to make one of the
 #   existing SimpleTurtles move some more and/or have different
 #   characteristics.
@@ -123,9 +125,19 @@ natasha.go_to(rg.Point(-100, 200))
 #
 ###############################################################################
 
+ricky = rg.SimpleTurtle('turtle')
+ricky.pen = rg.Pen('green', 5)
+ricky.left(45)
+
+ricky.speed = 3
+ricky.go_to(rg.Point(150, 150))
+
+ricky.speed = 7
+ricky.go_to(rg.Point(50,0))
+
 ###############################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
