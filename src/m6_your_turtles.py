@@ -28,6 +28,26 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
 
-__import__()
+import rosegraphics as rg
+
 window = rg.TurtleWindow()
 
+stephano = rg.SimpleTurtle('turtle')
+stephano.speed = 20
+stephano.pen = rg.Pen('black', 5)
+stephano.pen_up()
+
+size = 300
+
+for k in range(15):
+
+    stephano.draw_square(size)
+    stephano.pen_up()
+    stephano.right(45)
+    stephano.forward(10)
+    stephano.left(45)
+
+    stephano.pen_down()
+    size = size - 12
+
+window.close_on_mouse_click()
