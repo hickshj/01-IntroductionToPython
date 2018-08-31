@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   Write code that accomplishes the following:
 #     - Constructs a SimpleTurtle with a  blue  Pen.
 #     - Makes the SimpleTurtle go straight UP 200 pixels.
@@ -48,6 +48,9 @@ greg.speed = 5
 greg.left(90)
 greg.forward(200)
 greg.pen_up()
-greg.go_to(100, -40)
-
+greg.go_to(rg.Point(100, -40))
+greg.pen = rg.Pen('green', 10)
+greg.pen_down()
+greg.right(180)
+greg.forward(150)
 window.close_on_mouse_click()
