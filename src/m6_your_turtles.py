@@ -33,22 +33,38 @@ import rosegraphics as rg
 window = rg.TurtleWindow()
 
 stephano = rg.SimpleTurtle('turtle')
-stephano.speed = 20
+stephano.speed = 15
 stephano.pen = rg.Pen('black', 5)
-stephano.pen_up()
-stephano.pen_up()
 stephano.pen_down()
-size = 300
+size = 150
 
 for k in range(15):
 
-    stephano.draw_square(size)
-
+    stephano.draw_circle(size)
+    stephano.pen_up()
     stephano.right(45)
-    stephano.forward(10)
+    stephano.forward(20)
     stephano.left(45)
 
     stephano.pen_down()
     size = size - 12
+
+andrea = rg.SimpleTurtle('turtle')
+andrea.speed = 50
+andrea.pen = rg.Pen('green', 3)
+andrea.pen_down()
+size2 = 100
+rotate = 45
+rotate2 = 45
+for k in range(30):
+
+    andrea.draw_regular_polygon(12, size2)
+    andrea.right(rotate)
+    andrea.forward(10)
+    andrea.left(45)
+
+    andrea.pen_down()
+    rotate = rotate - 2
+    rotate2 = rotate2 +4
 
 window.close_on_mouse_click()
