@@ -36,13 +36,14 @@ stephano = rg.SimpleTurtle('turtle')
 stephano.speed = 20
 stephano.pen = rg.Pen('black', 5)
 stephano.pen_up()
-
+stephano.pen_up()
+stephano.pen_down()
 size = 300
 
 for k in range(15):
 
     stephano.draw_square(size)
-    stephano.pen_up()
+
     stephano.right(45)
     stephano.forward(10)
     stephano.left(45)
